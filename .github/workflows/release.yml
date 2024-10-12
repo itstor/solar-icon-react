@@ -32,7 +32,7 @@ jobs:
     if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true'
     permissions:
       id-token: write
-      contents: read
+      contents: write
     steps:
       - name: ⬇️ Checkout repository
         uses: actions/checkout@v4
