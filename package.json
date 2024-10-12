@@ -2,6 +2,7 @@
   "version": "1.0.0",
   "author": "Akhmad Thoriq",
   "homepage": "https://github.com/itstor/solar-icon-react#readme",
+  "repository": "https://github.com/itstor/solar-icon-react",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
