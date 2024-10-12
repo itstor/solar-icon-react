@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "author": "Akhmad Thoriq",
-  "homepage": "https://github.com/itstor/solar-icons-react#readme",
+  "homepage": "https://github.com/itstor/solar-icon-react#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "name": "solar-icons-react",
+  "name": "solar-icon-react",
   "scripts": {
     "build": "rollup -c",
     "gen": "tsx scripts/generate.ts",
@@ -15,7 +15,7 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "bugs": {
-    "url": "https://github.com/itstor/solar-icons-react/issues"
+    "url": "https://github.com/itstor/solar-icon-react/issues"
   },
   "contributors": [
     "Akhmad Thoriq <ahmadthoriq5@gmail.com>"

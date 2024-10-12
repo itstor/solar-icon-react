@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/itstor/solar-icons-react/refs/heads/main/images/banner.png">
+<img src="https://raw.githubusercontent.com/itstor/solar-icon-react/refs/heads/main/images/banner.png">
 
 # Solar Icon Set React Library
 
@@ -9,7 +9,7 @@ This is a React icon library for the Solar Icon Set, a large icon library consis
 To install the library:
 
 ```bash
-npm install solar-icons-react
+npm install solar-icon-react
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ To use an icon from the library, import it into your React component. Here's an 
 
 ```tsx
 import React from 'react';
-import { BoNotificationRemove } from 'solar-icons-react/bo';
+import { BoNotificationRemove } from 'solar-icon-react/bo';
 
 const MyComponent = () => {
     return (
@@ -49,7 +49,7 @@ The library is structured into modules based on icon categories. Each module has
 For example, to use a Bold icon, import it from the `bo` module:
 
 ```tsx
-import { BoNotificationRemove } from 'solar-icons-react/bo';
+import { BoNotificationRemove } from 'solar-icon-react/bo';
 ```
 
 ## License
