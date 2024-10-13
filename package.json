@@ -1,9 +1,9 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Akhmad Thoriq",
   "homepage": "https://github.com/itstor/solar-icon-react#readme",
   "repository": "https://github.com/itstor/solar-icon-react",
-  "description": "A set of React components for Solar Icons. Compatible with react-icons IconType type.",
+  "description": "A set of React components for Solar Icons with 7000+ icons, 37 categories, and 6 styles. Compatible with react-icons IconType type.",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
