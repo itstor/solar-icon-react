@@ -39,7 +39,7 @@ function camelCase(str: string): string {
   return str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
 }
 
-function convertToIconTree(node: ElementNode, category: string): IconTree {
+function convertToIconTree(node: ElementNode, category: string, isRoot = true): IconTree {
   if (typeof node === 'string') {
     return {
       tag: '',
@@ -60,18 +60,27 @@ function convertToIconTree(node: ElementNode, category: string): IconTree {
   if (attr.stroke && attr.stroke != 'none') attr.stroke = 'currentColor';
   if (attr.fill && attr.fill != 'none') attr.fill = 'currentColor';
 
-  if (attr.strokeWidth) attr.strokeWidth = attr.strokeWidth;
   if (attr.strokeLinecap) attr.strokeLinecap = attr.strokeLinecap;
   if (attr.strokeLinejoin) attr.strokeLinejoin = attr.strokeLinejoin;
   if (attr.fillRule) attr.fillRule = attr.fillRule;
   if (attr.clipRule) attr.clipRule = attr.clipRule;
 
+  const children = (node.children || [])
+    .filter((child): child is ElementNode => typeof child !== 'string')
+    .map(child => convertToIconTree(child, category, false));
+
+  if (category === 'Linear') {
+    if (isRoot && node.tagName === 'svg') {
+      attr.strokeWidth = '1.5';
+    } else {
+      delete attr.strokeWidth;
+    }
+  }
+
   return {
     tag: node.tagName || '',
     attr,
-    child: (node.children || [])
-      .filter((child): child is ElementNode => typeof child !== 'string')
-      .map(child => convertToIconTree(child, category)),
+    child: children,
   };
 }
 
@@ -79,7 +88,7 @@ function svgToIconTree(svgContent: string, category: string): IconTree {
   const parsed = parse(svgContent);
   const svgNode = parsed.children[0] as ElementNode;
 
-  return convertToIconTree(svgNode, category);
+  return convertToIconTree(svgNode, category, true);
 }
 
 function generateIconComponent(baseName: string, icon: IconData, suffix: number = 0): string {
