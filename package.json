@@ -1,12 +1,12 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Akhmad Thoriq",
   "homepage": "https://github.com/itstor/solar-icon-react#readme",
   "repository": "https://github.com/itstor/solar-icon-react",
   "description": "A set of React components for Solar Icons with 7000+ icons, 37 categories, and 6 styles. Compatible with react-icons IconType type.",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "name": "solar-icon-react",
   "keywords": [
     "solar",
@@ -34,42 +34,42 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     },
     "./bd": {
       "import": "./dist/bd/index.mjs",
-      "require": "./dist/bd/index.js",
+      "require": "./dist/bd/index.cjs",
       "types": "./dist/bd/index.d.ts"
     },
     "./bo": {
       "import": "./dist/bo/index.mjs",
-      "require": "./dist/bo/index.js",
+      "require": "./dist/bo/index.cjs",
       "types": "./dist/bo/index.d.ts"
     },
     "./br": {
       "import": "./dist/br/index.mjs",
-      "require": "./dist/br/index.js",
+      "require": "./dist/br/index.cjs",
       "types": "./dist/br/index.d.ts"
     },
     "./ld": {
       "import": "./dist/ld/index.mjs",
-      "require": "./dist/ld/index.js",
+      "require": "./dist/ld/index.cjs",
       "types": "./dist/ld/index.d.ts"
     },
     "./lib": {
       "import": "./dist/lib/index.mjs",
-      "require": "./dist/lib/index.js",
+      "require": "./dist/lib/index.cjs",
       "types": "./dist/lib/index.d.ts"
     },
     "./li": {
       "import": "./dist/li/index.mjs",
-      "require": "./dist/li/index.js",
+      "require": "./dist/li/index.cjs",
       "types": "./dist/li/index.d.ts"
     },
     "./ol": {
       "import": "./dist/ol/index.mjs",
-      "require": "./dist/ol/index.js",
+      "require": "./dist/ol/index.cjs",
       "types": "./dist/ol/index.d.ts"
     }
   },
