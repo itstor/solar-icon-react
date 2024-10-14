@@ -1,12 +1,12 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Akhmad Thoriq",
   "homepage": "https://github.com/itstor/solar-icon-react#readme",
   "repository": "https://github.com/itstor/solar-icon-react",
   "description": "A set of React components for Solar Icons with 7000+ icons, 37 categories, and 6 styles. Compatible with react-icons IconType type.",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "name": "solar-icon-react",
   "keywords": [
     "solar",
@@ -21,7 +21,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "bugs": {
     "url": "https://github.com/itstor/solar-icon-react/issues"
   },
@@ -35,50 +35,42 @@
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.js",
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.mjs"
+      "types": "./dist/index.d.ts"
     },
     "./bd": {
       "import": "./dist/bd/index.mjs",
       "require": "./dist/bd/index.js",
-      "types": "./dist/bd/index.d.ts",
-      "default": "./dist/bd/index.mjs"
+      "types": "./dist/bd/index.d.ts"
     },
     "./bo": {
       "import": "./dist/bo/index.mjs",
       "require": "./dist/bo/index.js",
-      "types": "./dist/bo/index.d.ts",
-      "default": "./dist/bo/index.mjs"
+      "types": "./dist/bo/index.d.ts"
     },
     "./br": {
       "import": "./dist/br/index.mjs",
       "require": "./dist/br/index.js",
-      "types": "./dist/br/index.d.ts",
-      "default": "./dist/br/index.mjs"
+      "types": "./dist/br/index.d.ts"
     },
     "./ld": {
       "import": "./dist/ld/index.mjs",
       "require": "./dist/ld/index.js",
-      "types": "./dist/ld/index.d.ts",
-      "default": "./dist/ld/index.mjs"
+      "types": "./dist/ld/index.d.ts"
     },
     "./lib": {
       "import": "./dist/lib/index.mjs",
       "require": "./dist/lib/index.js",
-      "types": "./dist/lib/index.d.ts",
-      "default": "./dist/lib/index.mjs"
+      "types": "./dist/lib/index.d.ts"
     },
     "./li": {
       "import": "./dist/li/index.mjs",
       "require": "./dist/li/index.js",
-      "types": "./dist/li/index.d.ts",
-      "default": "./dist/li/index.mjs"
+      "types": "./dist/li/index.d.ts"
     },
     "./ol": {
       "import": "./dist/ol/index.mjs",
       "require": "./dist/ol/index.js",
-      "types": "./dist/ol/index.d.ts",
-      "default": "./dist/ol/index.mjs"
+      "types": "./dist/ol/index.d.ts"
     }
   },
   "peerDependencies": {
