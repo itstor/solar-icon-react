@@ -102,7 +102,7 @@ function generateIconComponent(baseName: string, icon: IconData, suffix: number 
 
 async function generateCategoryFile(category: string, icons: IconData[]): Promise<void> {
   try {
-    const categoryDir = path.join(OUTPUT_DIR, CATEGORY_ABBREVIATIONS[category]);
+    const categoryDir = path.join(OUTPUT_DIR, CATEGORY_ABBREVIATIONS[category].toLowerCase());
     await fs.mkdir(categoryDir, { recursive: true });
 
     const filePath = path.join(categoryDir, 'index.ts');

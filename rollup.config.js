@@ -32,14 +32,22 @@ const config = {
       format: 'esm',
       preserveModules: true,
       preserveModulesRoot: 'src',
-      entryFileNames: '[name].mjs',
+      entryFileNames: (chunkInfo) => {
+        const parts = chunkInfo.name.split('/');
+        parts[0] = parts[0].toLowerCase();
+        return parts.join('/') + '.mjs';
+      },
     },
     {
       dir: 'dist',
       format: 'cjs',
       preserveModules: true,
       preserveModulesRoot: 'src',
-      entryFileNames: '[name].cjs',
+      entryFileNames: (chunkInfo) => {
+        const parts = chunkInfo.name.split('/');
+        parts[0] = parts[0].toLowerCase();
+        return parts.join('/') + '.cjs';
+      },
     }
   ],
   plugins: [
